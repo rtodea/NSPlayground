@@ -2,12 +2,80 @@
 </ActionBar>
 
 <ScrollView class="page">
-	<StackLayout class="home-panel">
-		<!--Add your page content here-->
-		<Label textWrap="true" text="Play with NativeScript!" class="h2 description-label"></Label>
-		<Label textWrap="true" text="Write code in the editor or drag and drop components to build a NativeScript mobile application."
-		 class="h2 description-label"></Label>
-		<Label textWrap="true" text="Scan the QR code with your mobile device and watch the changes sync live while you play with the code."
-		 class="h2 description-label"></Label>
-	</StackLayout>
+	<AbsoluteLayout width="210" height="210" backgroundColor="lightgray">
+		<Label text="10, 10" left="10" top="10" width="90" height="90" backgroundColor="red"></Label>
+		<Label text="110, 10" left="110" top="10" width="90" height="90" backgroundColor="green"></Label>
+		<Label text="110, 110" left="110" top="110" width="90" height="90" backgroundColor="blue"></Label>
+		<Label text="10, 110" left="10" top="110" width="90" height="90" backgroundColor="yellow"></Label>
+	</AbsoluteLayout>
+	<!--<DockLayout width="210" height="210" backgroundColor="lightgray" stretchLastChild="true">-->
+		<!--<Label text="left" dock="left" backgroundColor="red"></Label>-->
+		<!--<Label text="top" dock="top" backgroundColor="green"></Label>-->
+		<!--<Label text="right" dock="right" backgroundColor="blue"></Label>-->
+		<!--<Label text="bottom" dock="bottom" backgroundColor="yellow"></Label>-->
+	<!--</DockLayout>-->
+	<!--<GridLayout columns="50, auto, *" rows="50, auto, *" width="210" height="210" backgroundColor="lightgray" >-->
+		<!--<Label text="Label 1" row="0" col="0" backgroundColor="red"></Label>-->
+		<!--<Label text="Label 2" row="0" col="1" colSpan="2" backgroundColor="green"></Label>-->
+		<!--<Label text="Label 3" row="1" col="0" rowSpan="2" backgroundColor="blue"></Label>-->
+		<!--<Label text="Label 4" row="1" col="1" backgroundColor="yellow"></Label>-->
+		<!--<Label text="Label 5" row="1" col="2" backgroundColor="orange"></Label>-->
+		<!--<Label text="Label 6" row="2" col="1" backgroundColor="pink"></Label>-->
+		<!--<Label text="Label 7" row="2" col="2" backgroundColor="purple"></Label>-->
+	<!--</GridLayout>-->
+	<!--<StackLayout orientation="vertical" width="210" height="210" backgroundColor="lightgray">-->
+		<!--<Label text="Label 1" width="50" height="50" backgroundColor="red"></Label>-->
+		<!--<Label text="Label 2" width="50" height="50" backgroundColor="green"></Label>-->
+		<!--<Label text="Label 3" width="50" height="50" backgroundColor="blue"></Label>-->
+		<!--<Label text="Label 4" width="50" height="50" backgroundColor="yellow"></Label>-->
+	<!--</StackLayout>-->
+	<!--<WrapLayout orientation="vertical" width="210" height="210" backgroundColor="lightgray">-->
+		<!--<Label text="Label 1" width="70" height="70" backgroundColor="red"></Label>-->
+		<!--<Label text="Label 2" width="70" height="70" backgroundColor="green"></Label>-->
+		<!--<Label text="Label 3" width="70" height="70" backgroundColor="blue"></Label>-->
+		<!--<Label text="Label 4" width="70" height="70" backgroundColor="yellow"></Label>-->
+	<!--</WrapLayout>-->
+	<!--<FlexboxLayout flexDirection="column">-->
+		<!--&lt;!&ndash; Reverse the natural flow of items &ndash;&gt;-->
+		<!--<FlexboxLayout height="22" flexDirection="row-reverse">-->
+			<!--&lt;!&ndash; Use even flexGrow to achieve uniform grid &ndash;&gt;-->
+			<!--<Label text="1" backgroundColor="#EEEEEE" flexGrow="1" id="one"></Label>-->
+			<!--<Label text="2" backgroundColor="#DDDDDD" flexGrow="1"></Label>-->
+			<!--<Label text="3" backgroundColor="#CCCCCC" flexGrow="1"></Label>-->
+			<!--<Label text="4" backgroundColor="#BBBBBB" flexGrow="1"></Label>-->
+			<!--<Label text="5" backgroundColor="#AAAAAA" flexGrow="1"></Label>-->
+			<!--<Label text="6" backgroundColor="#999999" flexGrow="1" id="six"></Label>-->
+		<!--</FlexboxLayout>-->
+
+		<!--&lt;!&ndash; Set flexGrow to accomodate into any extra space &ndash;&gt;-->
+		<!--<ScrollView flexGrow="1" id="scrollview">-->
+
+			<!--&lt;!&ndash; Wrap excessive items on new lines &ndash;&gt;-->
+			<!--<FlexboxLayout flexWrap="wrap" alignContent="flex-start">-->
+
+				<!--<Label textWrap="true" text="Sed aliquet diam sed augue vestibulum scelerisque." id="title"></Label>-->
+
+				<!--&lt;!&ndash; Use flexWrapBefore to control explicit line wrapping &ndash;&gt;-->
+				<!--<Label text="Gihub issue labels:" flexWrapBefore="true" fontSize="11"></Label>-->
+
+				<!--<Label text="S: High" flexWrapBefore="true" borderRadius="5" backgroundColor="red" margin="2" id="firstlabel"></Label>-->
+				<!--<Label text="T: Feature" borderRadius="5" backgroundColor="green" margin="2"></Label>-->
+				<!--<Label text="3 - In Progress" borderRadius="5" backgroundColor="gray" margin="2"></Label>-->
+				<!--<Label text="S: Ullamcorper" borderRadius="5" backgroundColor="red" margin="2"></Label>-->
+				<!--<Label text="T: Vulputate" borderRadius="5" backgroundColor="green" margin="2"></Label>-->
+				<!--<Label text="2 - Egestas magna" borderRadius="5" backgroundColor="gray" margin="2"></Label>-->
+				<!--<Label text="S: High" borderRadius="5" backgroundColor="red" margin="2"></Label>-->
+				<!--<Label text="T: Phasellus" borderRadius="5" backgroundColor="green" margin="2"></Label>-->
+				<!--<Label text="Nullam" borderRadius="5" backgroundColor="gray" margin="2"></Label>-->
+
+				<!--<Label flexWrapBefore="true" textWrap="true" text="Pellentesque molestie nibh et leo facilisis gravida ac porttitor eros. Etiam tempus diam nulla, ut fermentum mauris aliquet quis. Cras finibus vitae magna in bibendum." id="description"></Label>-->
+			<!--</FlexboxLayout>-->
+		<!--</ScrollView>-->
+		<!--<FlexboxLayout>-->
+			<!--<Button text="&lt;" width="50" backgroundColor="gray"></Button>-->
+			<!--&lt;!&ndash; Set flexGrow to 1 accomodate into any extra space &ndash;&gt;-->
+			<!--<Button text="reactions" flexGrow="1" backgroundColor="darkgray"></Button>-->
+			<!--<Button text="&gt;" width="50" backgroundColor="gray"></Button>-->
+		<!--</FlexboxLayout>-->
+	<!--</FlexboxLayout>-->
 </ScrollView>
