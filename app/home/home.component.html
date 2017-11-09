@@ -4,10 +4,15 @@
 <ScrollView class="page">
 	<StackLayout class="home-panel">
 		<!--Add your page content here-->
-		<Label textWrap="true" text="Play with NativeScript!" class="h2 description-label"></Label>
-		<Label textWrap="true" text="Write code in the editor or drag and drop components to build a NativeScript mobile application."
-		 class="h2 description-label"></Label>
-		<Label textWrap="true" text="Scan the QR code with your mobile device and watch the changes sync live while you play with the code."
-		 class="h2 description-label"></Label>
+		<!-- basic Label usage-->
+		<Label class="h3 p-15" text="Label (no binding)" textWrap="true"></Label>
+
+		<!-- Label with one-way binding -->
+		<Label class="h3 p-15" [text]="oneway" textWrap="true"></Label>
+
+		<!-- Label with two-way binding -->
+		<Button class="btn btn-primary btn-active p-5 m-5" text="Change label text" (tap)="changeLabelText()"></Button>
+		<Label class="h3 p-15" [text]="counter + ' times two-way label has been changed'" textWrap="true"></Label>
+		<Label class="h3 p-15" [text]="twoway" (textChange)="onTextChanged($event)" textWrap="true"></Label>
 	</StackLayout>
 </ScrollView>
